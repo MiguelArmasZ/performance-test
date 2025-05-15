@@ -1,0 +1,32 @@
+---
+import Header from "@/components/Header.astro";
+import "@/styles/global.css";
+import "@/styles/utils.css";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Astro Basics</title>
+
+    <!-- fonts -->
+    <link
+      rel="preload"
+      href="/fonts/CalSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <!-- preloads -->
+    <link rel="preload" as="image" href="/hero.jpeg" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <Header />
+    <slot />
+  </body>
+</html>

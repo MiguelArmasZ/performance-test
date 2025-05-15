@@ -1,0 +1,41 @@
+---
+import HeaderNav from "@/components/HeaderNav.astro";
+---
+
+<header>
+  <div class="wrapper">
+    <span>logo</span>
+
+    <button id="menu-mobile-btn"> menú </button>
+
+    <HeaderNav />
+  </div>
+</header>
+
+<style>
+  header {
+    background-color: var(--primary);
+    /* opacity: 0.1; */
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: var(--header-height);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+  }
+
+  span {
+    color: var(--white);
+  }
+
+  header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+</style>
+
+<script src="@/helpers/handleMenuMobile.ts"></script>

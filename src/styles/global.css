@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Cal Sans";
+  src: url("/fonts/CalSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary: rgb(33, 91, 21);
+  --secondary: #d14;
+
+  --white: #fff;
+  --gray: #ccc;
+  --black: #000;
+
+  --ff-base: "Cal Sans";
+
+  --header-height: 55px;
+}
+
+html {
+  font-family: var(--ff-base);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+}
+
+::first-letter {
+  text-transform: capitalize;
+}
+
+body {
+  padding-top: var(--header-height);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
