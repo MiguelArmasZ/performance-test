@@ -14,7 +14,7 @@
   --gray: #ccc;
   --black: #000;
 
-  --ff-base: "Cal Sans";
+  --ff-base: "Cal Sans", system-ui, sans-serif;
 
   --header-height: 55px;
 }
